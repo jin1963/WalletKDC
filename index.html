@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KDC Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="kdc.png" alt="KDC Logo" class="logo" />
+    <h1>KDC Wallet</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress">Not connected</p>
+  </header>
+
+  <section class="token-list">
+    <div class="token">
+      <img src="token_logo-1.png" alt="KJC Logo" class="token-logo" />
+      <h2>KJC</h2>
+      <p>Balance: <span class="balance" id="kjcBalance">-</span></p>
+      <button onclick="addToken('KJC')">Add KJC</button>
+    </div>
+
+    <div class="token">
+      <img src="token_logo_2.png" alt="G3X24 Logo" class="token-logo" />
+      <h2>G3X24</h2>
+      <p>Balance: <span class="balance" id="g3x24Balance">-</span></p>
+      <button onclick="addToken('G3X24')">Add G3X24</button>
+    </div>
+
+    <div class="token">
+      <img src="token_logo_3.png" alt="LYDIA Logo" class="token-logo" />
+      <h2>LYDIA</h2>
+      <p>Balance: <span class="balance" id="lydiaBalance">-</span></p>
+      <button onclick="addToken('LYDIA')">Add LYDIA</button>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button>Send</button>
+    <button>Receive</button>
+
+    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xd479ae350dc24168e8db863c5413c35fb2044ecd" target="_blank">
+      <button>Swap KJC</button>
+    </a>
+    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x6cfD8Fe423F20F94825b5edB1E94068fBea19dC9" target="_blank">
+      <button>Swap G3X24</button>
+    </a>
+    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x0fa662697d93Eb024f411E416f681EA7FECFcF96" target="_blank">
+      <button>Swap LYDIA</button>
+    </a>
+
+    <button onclick="window.open('https://bscscan.com/address/0xd479ae350dc24168e8db863c5413c35fb2044ecd')">Explorer</button>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
