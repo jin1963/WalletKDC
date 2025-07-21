@@ -6,7 +6,7 @@ const tokenConfig = {
     image: "token_logo-1.png"
   },
   G3X24: {
-    address: "0x6cfD8Fe423F20F94825b5edB1E94068fBea19dC9",
+    address: "0xCcf14757654ddeF0eC30ab117C4Cf3aEbF3b5604",
     symbol: "G3X24",
     decimals: 18,
     image: "token_logo_2.png"
